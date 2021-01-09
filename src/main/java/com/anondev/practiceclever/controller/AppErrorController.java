@@ -13,7 +13,7 @@ public class AppErrorController implements ErrorController{
     String getErrorData (HttpServletRequest request, Model model){
         Integer errorCode = (Integer) request.getAttribute("javax.servlet.error.status_code");
         model.addAttribute("errorCode",errorCode);
-        return "error";
+        return "error/error";
     }
     
     @Override
